@@ -1,0 +1,18 @@
+[
+  { "name": "High Value" },
+  { "name": "Follow-up" },
+  { "name": "Urgent" },
+  { "name": "Newsletter" },
+  { "name": "Negotiation" },
+  { "name": "Cold Lead" },
+  { "name": "Warm Lead" },
+  { "name": "New Lead" },
+  { "name": "Potential Client" },
+  { "name": "Decision Pending" },
+  { "name": "Interested" },
+  { "name": "Closed Win" },
+  { "name": "Closed Lost" },
+  { "name": "Competitor" },
+  { "name": "Repeat Customer" }
+]
+  

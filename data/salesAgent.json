@@ -1,0 +1,22 @@
+[
+  { "name": "Rohit Sharma", "email": "rohit.sharma@anvaya.com" },
+  { "name": "Priya Singh", "email": "priya.singh@anvaya.com" },
+  { "name": "Tushar Mehra", "email": "tushar.mehra@anvaya.com" },
+  { "name": "Aman Verma", "email": "aman.verma@anvaya.com" },
+  { "name": "Neha Kapoor", "email": "neha.kapoor@anvaya.com" },
+  { "name": "Rahul Khanna", "email": "rahul.khanna@anvaya.com" },
+  { "name": "Simran Kaur", "email": "simran.kaur@anvaya.com" },
+  { "name": "Vikram Chauhan", "email": "vikram.chauhan@anvaya.com" },
+  { "name": "Anjali Desai", "email": "anjali.desai@anvaya.com" },
+  { "name": "Karan Patel", "email": "karan.patel@anvaya.com" },
+  { "name": "Riya Malhotra", "email": "riya.malhotra@anvaya.com" },
+  { "name": "Sanjay Gupta", "email": "sanjay.gupta@anvaya.com" },
+  { "name": "Mehul Shah", "email": "mehul.shah@anvaya.com" },
+  { "name": "Sneha Roy", "email": "sneha.roy@anvaya.com" },
+  { "name": "Ajay Yadav", "email": "ajay.yadav@anvaya.com" },
+  { "name": "Divya Nair", "email": "divya.nair@anvaya.com" },
+  { "name": "Harsh Tandon", "email": "harsh.tandon@anvaya.com" },
+  { "name": "Pooja Chawla", "email": "pooja.chawla@anvaya.com" },
+  { "name": "Nitin Bansal", "email": "nitin.bansal@anvaya.com" },
+  { "name": "Aisha Khan", "email": "aisha.khan@anvaya.com" }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Akash Verma",
+    "source": "Website",
+    "salesAgent": "693aa2624d530a5ce0a73e24",
+    "status": "New",
+    "tags": ["High Value"],
+    "timeToClose": 12,
+    "priority": "High"
+  },
+  {
+    "name": "Sonal Jha",
+    "source": "Cold Call",
+    "salesAgent": "693aa2624d530a5ce0a73e25",
+    "status": "Contacted",
+    "tags": ["Follow-up"],
+    "timeToClose": 8,
+    "priority": "Medium"
+  },
+  {
+    "name": "Hemant Joshi",
+    "source": "Referral",
+    "salesAgent": "693aa2624d530a5ce0a73e26",
+    "status": "Qualified",
+    "tags": ["Urgent"],
+    "timeToClose": 20,
+    "priority": "High"
+  },
+  {
+    "name": "Aditi Sharma",
+    "source": "Email",
+    "salesAgent": "693aa2624d530a5ce0a73e1b",
+    "status": "New",
+    "tags": ["Newsletter"],
+    "timeToClose": 10,
+    "priority": "Low"
+  },
+  {
+    "name": "Rohan Batra",
+    "source": "Advertisement",
+    "salesAgent": "693aa2624d530a5ce0a73e1c",
+    "status": "Proposal Sent",
+    "tags": ["Negotiation"],
+    "timeToClose": 25,
+    "priority": "Medium"
+  },
+  {
+    "name": "Preeti Sahu",
+    "source": "Website",
+    "salesAgent": "693aa2624d530a5ce0a73e24",
+    "status": "Contacted",
+    "tags": ["High Value"],
+    "timeToClose": 14,
+    "priority": "High"
+  },
+  {
+    "name": "Naveen Rao",
+    "source": "Referral",
+    "salesAgent": "693aa2624d530a5ce0a73e25",
+    "status": "New",
+    "tags": ["Cold"],
+    "timeToClose": 30,
+    "priority": "Low"
+  },
+  {
+    "name": "Manisha Pathak",
+    "source": "Cold Call",
+    "salesAgent": "693aa2624d530a5ce0a73e26",
+    "status": "Qualified",
+    "tags": ["Potential"],
+    "timeToClose": 18,
+    "priority": "Medium"
+  },
+  {
+    "name": "Deepak Kumar",
+    "source": "Advertisement",
+    "salesAgent": "693aa2624d530a5ce0a73e1b",
+    "status": "Closed",
+    "tags": ["Closed Win"],
+    "timeToClose": 5,
+    "priority": "High"
+  },
+  {
+    "name": "Rashmi Nanda",
+    "source": "Email",
+    "salesAgent": "693aa2624d530a5ce0a73e1c",
+    "status": "New",
+    "tags": ["Warm Lead"],
+    "timeToClose": 22,
+    "priority": "Medium"
+  },
+  {
+    "name": "Abhishek Goel",
+    "source": "Website",
+    "salesAgent": "693aa2624d530a5ce0a73e24",
+    "status": "Proposal Sent",
+    "tags": ["Negotiation"],
+    "timeToClose": 16,
+    "priority": "High"
+  },
+  {
+    "name": "Shivani Dua",
+    "source": "Cold Call",
+    "salesAgent": "693aa2624d530a5ce0a73e25",
+    "status": "Contacted",
+    "tags": ["Follow-up"],
+    "timeToClose": 11,
+    "priority": "Medium"
+  },
+  {
+    "name": "Gagan Singh",
+    "source": "Referral",
+    "salesAgent": "693aa2624d530a5ce0a73e26",
+    "status": "Qualified",
+    "tags": ["Urgent"],
+    "timeToClose": 19,
+    "priority": "High"
+  },
+  {
+    "name": "Surbhi Jain",
+    "source": "Email",
+    "salesAgent": "693aa2624d530a5ce0a73e1b",
+    "status": "New",
+    "tags": ["Newsletter"],
+    "timeToClose": 13,
+    "priority": "Low"
+  },
+  {
+    "name": "Tarun Kapoor",
+    "source": "Advertisement",
+    "salesAgent": "693aa2624d530a5ce0a73e1c",
+    "status": "Contacted",
+    "tags": ["Interested"],
+    "timeToClose": 21,
+    "priority": "Medium"
+  },
+  {
+    "name": "Anamika Rao",
+    "source": "Referral",
+    "salesAgent": "693aa2624d530a5ce0a73e24",
+    "status": "New",
+    "tags": ["Urgent"],
+    "timeToClose": 17,
+    "priority": "Medium"
+  },
+  {
+    "name": "Jatin Malhotra",
+    "source": "Website",
+    "salesAgent": "693aa2624d530a5ce0a73e25",
+    "status": "Qualified",
+    "tags": ["Competitor"],
+    "timeToClose": 26,
+    "priority": "Low"
+  },
+  {
+    "name": "Meenakshi Iyer",
+    "source": "Email",
+    "salesAgent": "693aa2624d530a5ce0a73e26",
+    "status": "Proposal Sent",
+    "tags": ["Decision Pending"],
+    "timeToClose": 14,
+    "priority": "High"
+  },
+  {
+    "name": "Kunal Suri",
+    "source": "Cold Call",
+    "salesAgent": "693aa2624d530a5ce0a73e1b",
+    "status": "Contacted",
+    "tags": ["Follow-up Required"],
+    "timeToClose": 12,
+    "priority": "Medium"
+  },
+  {
+    "name": "Aarohi Malik",
+    "source": "Website",
+    "salesAgent": "693aa2624d530a5ce0a73e1c",
+    "status": "New",
+    "tags": ["New Lead"],
+    "timeToClose": 15,
+    "priority": "Low"
+  }
+]
