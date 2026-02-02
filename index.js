@@ -311,6 +311,19 @@ app.get("/agents", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch sales agents" });
   }
 });
+ // DELETE SALES AGENT
+app.delete("/agents/:id", async (req, res) => {
+  try {
+    const deletedAgent = await SalesAgent.findByIdAndDelete(req.params.id);
+    if (deletedAgent) {
+      res.json({ message: "Sales Agent deleted successfully" });
+    } else {
+      res.status(404).json({ error: "Agent not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed to delete agent" });
+  }
+});
 
 
 
