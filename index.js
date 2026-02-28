@@ -348,9 +348,21 @@ async function readCommentsByLeadId(leadId) {
 
 app.post("/leads/:id/comments", async (req, res) => {
   try {
-    const comment = await addCommentToLead(req.params.id, req.body);
-    res.status(201).json(comment);
+    const { authorId, text } = req.body; // Expecting ID from frontend
+    
+    const newComment = new Comment({
+      lead: req.params.id,
+      author: authorId, // Must be the MongoDB _id
+      commentText: text
+    });
+
+    const savedComment = await newComment.save();
+    
+    // To send back the updated list of comments to the frontend:
+    const allComments = await Comment.find({ lead: req.params.id }).populate("author");
+    res.status(201).json(allComments); 
   } catch (error) {
+    console.error(error);
     res.status(500).json({ error: "Failed to add comment" });
   }
 });
