@@ -312,16 +312,19 @@ app.get("/agents", async (req, res) => {
   }
 });
  // DELETE SALES AGENT
+// DELETE AGENT: Agent ko udhao aur uske leads ko 'Unassigned' karo
 app.delete("/agents/:id", async (req, res) => {
   try {
     const deletedAgent = await SalesAgent.findByIdAndDelete(req.params.id);
     if (deletedAgent) {
-      res.json({ message: "Sales Agent deleted successfully" });
+      // Jitne leads is agent ke paas the, unka salesAgent null kar do
+      await Lead.updateMany({ salesAgent: req.params.id }, { $set: { salesAgent: null } });
+      res.json({ message: "Agent gaya, aur leads free ho gaye!" });
     } else {
-      res.status(404).json({ error: "Agent not found" });
+      res.status(404).json({ error: "Agent nahi mila boss!" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Failed to delete agent" });
+    res.status(500).json({ error: "Kand ho gaya delete karte waqt!" });
   }
 });
 
