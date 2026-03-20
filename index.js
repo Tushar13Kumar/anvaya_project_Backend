@@ -259,6 +259,23 @@ app.put("/leads/:id", async (req, res) => {
   }
 });
 
+// UPDATE LEAD (PATCH method support)
+app.patch("/leads/:id", async (req, res) => {
+  try {
+    // updateLeadById function wahi use hoga jo aapne pehle se banaya hai
+    const updatedLead = await updateLeadById(req.params.id, req.body);
+    
+    if (updatedLead) {
+      res.json(updatedLead);
+    } else {
+      res.status(404).json({ error: "Lead not found" });
+    }
+  } catch (error) {
+    console.error("Update Error:", error);
+    res.status(500).json({ error: "Failed to update lead" });
+  }
+});
+
 // DELETE LEAD
 app.delete("/leads/:id", async (req, res) => {
   try {
