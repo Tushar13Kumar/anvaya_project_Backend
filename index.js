@@ -1,15 +1,26 @@
 
-const express = require("express")
-const cors = require("cors");
-const app = express()
-app.use(
-  cors({
-   origin: "*",
+// const express = require("express")
+// const cors = require("cors");
+// const app = express()
+// app.use(
+//   cors({
+//    origin: "*",
  
-    methods: ["GET", "POST", "PUT", "DELETE"],
-    credentials: true,
-  })
-);
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true,
+//   })
+// );
+const express = require("express");
+const cors = require("cors");
+const app = express();
+
+// Sahi order: Pehle CORS, fir JSON parsing
+app.use(cors({
+    origin: "*",
+methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // OPTIONS zaroori hai pre-flight ke liye    credentials: true,
+}));
+
+app.use(express.json()); // Ye hamesha routes se pehle hona chahiye
 const { initializeDatabase } = require("./db/db.connect");
 // const fs = require("fs");
 
@@ -18,8 +29,8 @@ const SalesAgent = require("./models/salesAgent.model")
 const Comment = require("./models/comment.model");
 const Tag = require("./models/tag.model");
 
-app.use(cors());
-app.use(express.json())
+// app.use(cors());
+// app.use(express.json())
 
 initializeDatabase();
 
