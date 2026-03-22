@@ -16,9 +16,14 @@ const app = express();
 
 // Sahi order: Pehle CORS, fir JSON parsing
 app.use(cors({
-    origin: "*",
-methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"], // OPTIONS zaroori hai pre-flight ke liye    credentials: true,
+    origin: "*", 
+    methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"] // Ye line add karo
 }));
+
+// CORS ke turant baad ye middleware add karo pre-flight handle karne ke liye
+app.options('*', cors());
 
 app.use(express.json()); // Ye hamesha routes se pehle hona chahiye
 const { initializeDatabase } = require("./db/db.connect");
