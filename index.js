@@ -23,7 +23,7 @@ app.use(cors({
 }));
 
 // CORS ke turant baad ye middleware add karo pre-flight handle karne ke liye
-app.options('*', cors());
+// app.options('*', cors());
 
 app.use(express.json()); // Ye hamesha routes se pehle hona chahiye
 const { initializeDatabase } = require("./db/db.connect");
