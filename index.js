@@ -336,28 +336,25 @@ app.post("/agents", async (req, res) => {
   }
 });
 
-app.get("/agents", async (req, res) => {
-  try {
-    const agents = await readAllSalesAgents();
-    res.json(agents);
-  } catch (error) {
-    res.status(500).json({ error: "Failed to fetch sales agents" });
-  }
-});
- // DELETE SALES AGENT
-// DELETE AGENT: Agent ko udhao aur uske leads ko 'Unassigned' karo
+a// DELETE SALES AGENT
 app.delete("/agents/:id", async (req, res) => {
   try {
-    const deletedAgent = await SalesAgent.findByIdAndDelete(req.params.id);
+    const { id } = req.params;
+    console.log("Delete request received for ID:", id); // Console check ke liye
+
+    const deletedAgent = await SalesAgent.findByIdAndDelete(id);
+    
     if (deletedAgent) {
-      // Jitne leads is agent ke paas the, unka salesAgent null kar do
-      await Lead.updateMany({ salesAgent: req.params.id }, { $set: { salesAgent: null } });
-      res.json({ message: "Agent gaya, aur leads free ho gaye!" });
+      // Leads update logic
+      await Lead.updateMany({ salesAgent: id }, { $set: { salesAgent: null } });
+      return res.json({ message: "Agent successfully deleted" });
     } else {
-      res.status(404).json({ error: "Agent nahi mila boss!" });
+      console.log("Agent not found in DB");
+      return res.status(404).json({ error: "Agent ID not found in database" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Kand ho gaya delete karte waqt!" });
+    console.error("Delete Error:", error);
+    res.status(500).json({ error: "Internal Server Error during deletion" });
   }
 });
 
