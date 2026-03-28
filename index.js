@@ -336,7 +336,7 @@ app.post("/agents", async (req, res) => {
   }
 });
 
-a// DELETE SALES AGENT
+// DELETE SALES AGENT
 app.delete("/agents/:id", async (req, res) => {
   try {
     const { id } = req.params;
