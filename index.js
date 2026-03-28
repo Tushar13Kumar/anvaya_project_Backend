@@ -327,6 +327,20 @@ async function readAllSalesAgents() {
   }
 }
 
+// GET ALL AGENTS
+app.get("/agents", async (req, res) => {
+  try {
+    const agents = await readAllSalesAgents(); // Ye function aapne pehle se banaya hua hai
+    if (agents) {
+      res.json(agents);
+    } else {
+      res.status(404).json({ error: "No agents found" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch agents" });
+  }
+});
+
 app.post("/agents", async (req, res) => {
   try {
     const agent = await createSalesAgent(req.body);
